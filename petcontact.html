@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Pet Adoption Services</title>
+  </head>
+  <body>
+    <!-- Container to wrap everything -->
+    <div id="container">
+      <!-- Brand of Website -->
+      <header>
+        <img
+          src="images/adoptapet.jpg"
+          alt="Adopt Pet"
+          width="1200"
+          height="400"
+        />
+        <div class="main-header">
+          <div class="logo">
+            <img
+              src="images/download.jpg"
+              alt="Pet Adoption Services"
+              width="125"
+            />
+            <nav class="main-menu"></nav>
+          </div>
+        </div>
+      </header>
+      <!-- Main Navigation -->
+      <nav>
+        <ul>
+          <li><a href="pet.html">Home</a></li>
+          <li><a href="petservices.html">Pet Adoption</a></li>
+          <li>Events</li>
+          <li><a href="petcontact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- End Main Navigation -->
+
+      <!-- Main Content -->
+      <main>
+        <form action="/signup" method="post">
+            <fieldset>
+                <legend>User Personal Information</legend>
+
+                <label>Enter your full name</label><br>
+                <input type="text" name="name" /><br>
+                <label>Enter your email</label><br>
+                <input type="email" name="email" /><br>
+                <label>Entert your phone</label><br>
+                <input type="text" name="phone" /><br>
+                <br>
+                <br><label>Select your gender</label><br>
+                <input type="radio" name="gender" value="male"/>Male
+                <input type="radio" name="gender" value=""/>Female <br/>
+                <br><label>Which pet adoption are you inquiring about?</label> <br/>
+                <select>
+                    <option selected="selected" value="1">Adult Dogs</option>
+                    <option selected="selected" value="2">Puppies</option>
+                    <option selected="selected" value="3">Kittens</option> 
+                    <option selected="selected" value="4">Rabbits</option>
+                </select><br/>
+                <br><label>Tell us more:</label> <br/>
+                <textarea cols="30" rows="2"></textarea><br /> 
+                <br><label>How did you hear about us?</label> <br/>
+                <textarea cols="30" rows="2"></textarea><br /> 
+                <button type="inquire" value="inquire">Inquire</button>
+            </fieldset>
+            </fieldset>
+        </form>
+      </main>
+      <!-- End Main Content -->
+
+      <!-- Footer Information-->
+
+      <footer>
+        <div id="nondisclaimer">
+          <div class="copy">&copy; Copyright 2022 :: PetAdoption.com</div>
+          <div class="social">
+            <h3>Facebook Image</h3>
+            <h3>Instagram Image</h3>
+            <h3>Twitter Image</h3>
+          </div>
+        </div>
+        <div id="disclaimer">
+          <p>
+            This website is designed and created solely for educational purposes
+            only at Westcliff University. All contents are not intended for any
+            commercial gain or use.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- End Container -->
+  </body>
+</html>
