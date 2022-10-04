@@ -71,14 +71,33 @@ main {
   margin-bottom: 5em;
 }
 
-
-
-fieldset {
-  margin-top: 10em;
-  margin-right: 25em;
-  margin-left: 5em;
-  margin-bottom: 5em;
+/* Form */
+label {
+  display: block;
+  margin: 15px 0 0 0;
 }
+input[type="textarea"],
+textarea {
+  width: 400;
+}
+input[type="radio"] {
+  width: 25px;
+}
+input[type="inquire"] {
+  display: block;
+  margin: 20px 0 10px 0;
+  width: 100px;
+}
+
+#email, #phone {
+  display: none;
+}
+
+#email input[type="email"], #phone input[type="phone"], #fullName {
+  width: 253px;
+}
+
+
 
 main #album #photo img {
   width: 400px;
