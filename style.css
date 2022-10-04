@@ -1,0 +1,272 @@
+#home header {
+  background: no-repeat url(images/adoptapet.jpg);
+  background-size: 1400px;
+}
+
+header {
+  
+  min-height: 500px;
+  padding-top: 1em;
+}
+.main-header .logo img {
+  width: 400px;
+  height: 90px;
+  margin: 0 2em 2em 0;
+  float: left;
+  opacity: 60%;
+}
+
+#petImg {
+  margin-left: 2em;
+  width: 250px;
+  height: 200px;
+}
+
+.main-header {
+  width: 500px;
+  min-height: 100px;
+  height: 100px;
+}
+.main-header .logo img {
+  width: 100px;
+  height: 100px;
+  margin: 0 2em 0 0;
+  float: left;
+}
+.main-menu {
+  margin-left: 28%;
+  font-weight: 400;
+}
+.main-menu ul li {
+  list-style-type: none;
+  float: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-left: 1px solid rgba(84, 125, 238, 0.801);
+  line-height: 100px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+.main-menu ul li a {
+  text-decoration: none;
+  color: rgb(10, 9, 9);
+}
+.main-menu ul li a:hover {
+  color: #3458d0;
+}
+.main-menu ul li.active {
+  background: #3497d0;
+  border: nome;
+}
+.main-menu ul li.active a {
+  color: rgb(24, 23, 23);
+}
+
+main {
+  margin-top: 10em;
+  margin-right: 25em;
+  margin-left: 5em;
+  margin-bottom: 5em;
+}
+
+
+
+fieldset {
+  margin-top: 10em;
+  margin-right: 25em;
+  margin-left: 5em;
+  margin-bottom: 5em;
+}
+
+main #album #photo img {
+  width: 400px;
+}
+
+section {
+  width: 100%;
+  background-color: #4288c3;
+}
+
+section #album {
+  width: 1200px;
+  padding: 3em 0 2em 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section #partners .photo {
+  display: inline-block;
+  margin: 0 0.75em;
+  padding: 1.3em 1.5em;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.imageBox {
+  position: relative;
+  width: 50%;
+  text-align: center;
+}
+
+.photo {
+  opacity: 1;
+  display: block;
+  width: 400px;
+  height: 350px;
+  margin: 20px 15px 30px 15px;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  padding: 1em 0;
+}
+
+.middle {
+  transition: 0.5s ease;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imageBox:hover .middle {
+  visibility: visible;
+}
+
+#text {
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+figcaption {
+ width: 100%;
+}
+
+#gallery .row {
+  display: inline-flex;
+  margin-left: 7em;
+}
+
+/*Modal*/
+#modal {
+  visibility: hidden;
+  position: fixed;
+    width: 350px;
+    z-index: 1;
+    height: 235px;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    border-radius: 20px;
+    left: 45%;
+    top: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+
+}
+
+#headingModal, #bodyModal {
+  margin: 1em;
+}
+
+#closeInfo {
+  text-align: center;
+  color: yellow;
+  padding: 2em;
+}
+
+footer {
+  width: 100%;
+  height: 155px;
+  padding-bottom: 1em;
+  background-color: #1369e9ee;
+}
+footer #nondisclaimer .copy {
+  padding: 3.5em 3.5em 3.5em 13em;
+  float: left;
+  font-size: 0.9em;
+}
+footer #nondisclaimer .social {
+  padding: 2.5em;
+  margin-right: 9.25em;
+  float: right;
+}
+footer #disclaimer {
+  clear: both;
+}
+footer #disclaimer p {
+  font-size: 0.85em;
+  text-align: center;
+}
+footer #nondisclaimer .social .fa {
+  padding: 15px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 4px;
+  border-radius: 50%;
+}
+footer #nondisclaimer .social .fa:hover {
+  opacity: 0.7;
+}
+footer #nondisclaimer .social .fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+footer #nondisclaimer .social .fa-twitter {
+  background: #55acee;
+  color: white;
+}
+footer #nondisclaimer .social .fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/*lightBox*/
+
+  
+.backdrop {
+    z-index: 1;
+    opacity: .0;
+    filter: alpha(opacity=0);
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+.box {
+    z-index: 2;
+    position: fixed;
+    opacity: 1;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 0px 5px #444444;
+    -webkit-box-shadow: 0px 0px 5px #444444;
+    box-shadow: 0px 0px 5px #444444;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}
+
+.box img {
+    width:100%;
+}
